@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obrazki"
+        android:fontFamily="sans-serif"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/android_green"
+        android:contentDescription="@string/android_man_logo"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/go_back_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="37dp"
+        android:text="Powrót" />
+
+    <Button
+        android:id="@+id/change_picture_button"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/go_back_button"
+        android:layout_centerHorizontal="true"
+        android:text="Zmień" />
+
+    <Button
+        android:id="@+id/previous_picture_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/change_picture_button"
+        android:layout_alignEnd="@+id/imageView"
+        android:text="Poprzedni" />
+
+</RelativeLayout>
